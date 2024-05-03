@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+ * /*Feedback*/ 
+    {
+            margin: 0;
+            padding: 0;
+            font-family: "montserrat", sans-serif;
+        }
+        .feedback {
+            padding: 40px 0;
+            background: #fffcfc;
+            color: #0f0f0f;
+            text-align: center;
+        }
+
+        .feedback h1 {
+            margin-bottom: 30px; 
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #060505; 
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+            margin-right : 20px;
+            margin-left : 20px;
+            background-color:rgba(245, 191, 99, 0.867)
+        }
+        .feedback-user{
+            background-color:transparent
+        }
+        .feedback-user:hover img{
+            transform: scale(1.1);
+        }
+        .feedback .name,
+        .feedback ion-icon {
+            background-color: transparent; 
+            padding: 5px; 
+            border-radius: 5px; 
+            margin-bottom: 10px; 
+        }
+        .feedback img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+   .p .feedback{
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28%;
+    font-weight: bold;
+ }
+
+  .feedback .stars {
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+  .name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+
+  /*Footer*/ 
+  .footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }
+    
+  .footer ul {
+    list-style: none;
+    padding: 0;
+     margin: 0;
+  }
+    
+  .footer li {
+     display: inline-block; 
+     margin-right: 60px;
+     margin-left: auto; 
+     margin-bottom: 20px;
+  }
+    
+  .footer li:last-child {
+     margin-right: 0;
+  }
+    
+   .footer a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+  }
+    
+    .footer a:hover {
+     color: #F97300;
+  }
+    
+    .footer i {
+     font-size: 20px;
+     color: orange;
+  }
+    
+    .social-links {
+      margin-top: 20px;
+  }
+    
+    .social-links li a i {
+      font-size: 25px; 
+      margin-right: 5px; 
+  }
+    
+    .social-links li:nth-child(1) a:hover i.fab.fa-facebook-f {
+        color: #0d4dd8; 
+  }
+    
+    .social-links li:nth-child(2) a:hover i.fab.fa-twitter {
+        color: #628ee1;
+  }
+    
+    .social-links li:nth-child(3) a:hover i.fab.fa-instagram {
+        color: #bc2a8d;
+  }
+    
+    @media screen and (max-width: 600px) {
+    .footer li {
+        display: inline-block; 
+        margin: 20px ; 
+        margin-right: 0; 
+  }
+    
+    .footer li:last-child {
+        margin-bottom: 0;
+  }  
+}
+    </style>
+</head>
+<body>
+    <div class="feedback">
+        <h1>Feedback</h1>
+           <div class="row">
+             <div class="col">
+                <div class="feedback-user">
+                    <img src="/Feedback Images/1.png" alt="">
+                    <div class="name">Leila Cruz</div>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>
+                    “I recently tried the vegetable taco at Abby’s Taco, and it was a delightful experience! The veggies were fresh, the flavors were well-balanced, and the tortilla was perfectly cooked.
+                    It’s great to have a delicious and healthy option on the menu!”
+                </p>
+            </div>
+            <div class="col">
+                <div class="feedback-user">
+                    <img src="/Feedback Images/2.png" alt="">
+                    <div class="name">Miguel Santos</div>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>
+                    "The bacbacuoa taco from Abby’s Taco is a game-changer! The meat was tender and flavorful,
+                    and the spices used were just right – not too overpowering but enough to give it a kick. Definitely coming back for more!""
+                </p>
+            </div>
+
+            <div class="col">
+                <div class="feedback-user">
+                    <img src="/Feedback Images/3.png" alt="">
+                    <div class="name">Anne Torres</div>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>
+                    "Abby’s Taco offers a variety of flavors, and each one I’ve tried has been impressive. The breakfast taco, with its unique blend of ingredients,
+                    was a pleasant surprise. It’s clear that there’s a lot of thought put into their taco creations. Keep up the good work!"
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>      
+  </div>  
+</div>
+</body>
+</html>
