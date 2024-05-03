@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abby's Tacos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">      
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+       <div class="logo">
+            <a href="#slideshow">Abby's Tacos<img src="Logo.png" alt="logo"></a>
+        </div>
+       <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+       </div>
+     <ul class="menu">
+        <li><a href="#slideshow">Home</a></li>
+        <li><a href="#gallery-container">Gallery</a></li>
+        <li><a href="#menu-text">Menu</a></li>
+        <li><a href="order-form.html">Order</a></li>
+
+     </ul>
+    </nav>
+
+    <div id="slideshow-container" class="slideshow-container">
+        <div class="mySlide fade">
+           <div class="text">Welcome to Abby's Taco</div>
+           <img src="/Image Slider/1.jpeg" style="width:100%">
+        </div>
+        <div class="mySlide fade">
+           <div class="text">In every bite, you feel special</div>
+           <img src="Image Slider/2.jpeg" style="width:100%">
+        </div>
+        <div class="mySlide fade">
+           <img src="Image Slider/3.jpeg" style="width:100%"> 
+        </div>
+        <div class="order-button-container">
+          <a href="order-form.html">
+            <button class="order-button">Order Now</button>
+          </a>
+        </div>
+     </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <br>
+      
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+        <div class="gallery-container" id="gallery-container">
+          <div class="gallery-text-container">
+            <h2>Gallery</h2>
+          </div>
+          <div class="gallery-img-container">
+            <div class="box">
+              <img src="/Gallery/1.jpg">
+            </div>
+            <div class="box">
+              <img src="/Gallery/2.jpg">
+            </div>
+            <div class="box">
+              <img src="/Gallery/3.jpg">
+            </div>
+            <div class="box">
+              <img src="/Gallery/4.jpg"> 
+            </div>
+            <div class="box">
+              <img src="/Gallery/5.jpg">
+            </div>
+            <div class="box">
+              <img src="Gallery/6.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="best-seller" id="text-best">
+          <div class="best-seller-text-container">
+            <h2>Best Seller</h2>
+          </div>
+          <div class="best-seller-img-container">
+            <div class="box-best-seller">
+              <img src="/Best Seller/1.jpg">
+              <h3>Vegatables Tacos</h3>
+            </div>
+            <div class="box-best-seller">
+              <img src="/Best Seller/2.jpg">
+              <h3>Chicharon Tacos</h3>
+            </div>
+            <div class="box-best-seller">
+              <img src="/Best Seller/3.jpg">
+              <h3>Breakfast Tacos</h3>
+            </div>
+          </div>
+      </div>
+
+      <div class="menu-tacos-container"></div>
+        <div class="menu-text" id="menu-text">
+            <h2>Menu</h2>
+        </div>
+          <div class="menu-container">
+            <div class="card">
+              <img src="/Menu/1.jpg" alt="Abby's Special Tacos">
+              <div class="description">
+                <h1>Abby's Special Tacos</h1>
+                <p>The <span>Abby's Special Tacos</span> are a mix of different meats like </br>chorizo and beef, 
+                  along with cilantro.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/Menu/2.jpg" alt="Vegetables Tacos">
+              <div class="description">
+                <h1>Vegetable Tacos</h1>
+                <p>The <span>Vegetable Tacos</span> consist of grilled  chicken with onions, </br>cilantro,
+                   and avocado.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/Menu/3.jpg" alt="Shrimp Tacos">
+              <div class="description">
+                <h1>Shrimp Tacos</h1>
+                <p>The <span>Shrimp Tacos</span> consist of shrimp with onions </br> and cilantro.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/Menu/4.jpg" alt="Barbacoa Tacos">
+              <div class="description">
+                <h1>Barbacoa Tacos</h1>
+                <p>The <span>Barbacoa Tacos</span> consist of slow-cooked beef </br> with onions 
+                  and cilantro.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/Menu/5.jpg" alt="Goaty Tacos">
+              <div class="description">
+                <h1>Goaty Tacos</h1>
+                <p>The <span>Goaty Tacos</span> are grilled cuts of goat with onions,</br> tomatoes,
+                   and mayonnaise.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/Menu/6.jpg" alt="Breakfast Tacos">
+              <div class="description">
+                <h1>Breakfast Tacos</h1>
+                <p>The <span>Breakfast Tacos</span> are pork with egg, java rice,</br> avocado, cilantro,
+                   and tomatoes.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/Menu/7.jpg" alt="Chicharon Tacos">
+              <div class="description">
+                <h1>Chicharon Tacos</h1>
+                <p>The <span>Chicharon Tacos</span> are cooked potatoes, cut into </br>squares, 
+                  and served with lettuce, cheese, and mayonnaise.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/Menu/8.jpg" alt="Grilled Pork Tacos">
+              <div class="description">
+                <h1>Grilled Pork Tacos</h1>
+                <p>The <span>Grilled Pork Tacos</span> are a mix of different meats </br> like chorizo and beef, 
+                  along with mayonnaise.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/Menu/9.jpg" alt="Potatoes Tacos">
+              <div class="description">
+                <h1>Potato Tacos</h1>
+                <p>The <span>Potato Tacos</span> are cooked potatoes, cut into </br>squares,
+                   and served with lettuce, cheese, and mayonnaise.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <ul>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+          <ul class="social-links">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </footer>      
+    </div>     
+    <script src="script.js"></script>
+</head>
+<body>
+</html>
