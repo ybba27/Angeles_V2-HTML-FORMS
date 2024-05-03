@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="order-logo">
+        <div class="logo-container">
+        <h1 class="tacos-heading">Abby's Tacos</h1>
+        </div>
+        <p>
+          <em class="order-form-text">
+            Order Form
+          </em>
+        </p>
+      </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Order */
+body {
+  background: linear-gradient(to left, #ebc6a1, #e4cea3, #d8c377);
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.list-items {
+  text-align: left;
+  font-size: 20px; 
+  margin-bottom: 10px; 
+}
+.order-logo {
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 20px auto; 
+  padding: 50px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+}
+
+.order-logo .order-form-text {
+  font-family: "Platypi", sans-serif;
+  align-items: center;
+  font-size: 27px;
+}
+
+.card-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.image-card {
+  display: flex;
+  justify-content: center;
+  border:none;
+}
+
+.image-card img {
+  max-width: 100%;
+  height: auto;
+  border: none; 
+}
+
+.image-card:hover img{
+  transform: scale(1.1);
+}
+
+.food-title {
+  margin-top: 10px;
+}
+.food-container {
+  border: 2px solid black; 
+  padding: 10px;
+  background-color:rgba(223, 214, 214, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.price span {
+  font-size: 20px;
+}
+input[type="checkbox"] {
+  display: none; 
+}
+
+input[type="checkbox"] + label {
+  display: inline-flex; 
+  width: 40px;
+  height: 40px;
+  background-color: #dcdcdc;
+  border: 2px solid black;
+  cursor: pointer;
+  margin-left: 10px;
+  justify-content: center; 
+  align-items: center; 
+}
+input[type="checkbox"]:checked + label::after {
+  content: "\f00c"; 
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 24px; 
+  color: #020202;
+}
+
+/*Form */ 
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: rgba(223, 214, 214, 0.5);
+  border-radius: 10px;
+  border: 3px solid black;
+  max-width: 500px;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+ display: block;
+ color: #292828;
+ margin-bottom: 5px;
+
+}
+  input[type="name"],
+  input[type="email"],
+  input[type="age"],
+  select,
+  textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #100f0f;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #111010;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  padding: 33px;
+  border: 1px solid #030202;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button[type="submit"],
+button[type="button"] {
+  padding: 15px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444444;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #191818;
+}
+    input[type="name"]#name {
+    font-size: 18px; 
+    padding: 10px; 
+    font-family: Helvetica, sans-serif;
+}
+
+ </style>
+    <body>
+      <section class="category">
+          <div class="list-items">
+              <h3>Order/s:</h3>
+          <div class="card-list">
+            <div class="food-container">
+               <div class="image-card">
+                  <img src="/Circle Image/1.png" alt=""></div>
+                <div class="food-content">
+                <div class="food-title">
+                       <h1>Shrimp Tacos</h1>
+                          </div>
+                          <div class="price">
+                              <span>₱80.00 each</span>
+                              <div class="wrapper">
+                                  <input type="checkbox" id="myCheckbox1" name="myCheckbox1" value="checked">
+                                  <label for="myCheckbox1"></label>  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="food-container">
+                    <div class="image-card">
+                      <img src="/Circle Image/2.png" alt="">
+                    </div>
+                    <div class="food-content">
+                      <div class="food-title">
+                        <h1>Grilled Pork Tacos</h1>
+                      </div>
+                      <div class="price">
+                        <span>₱80.00 each</span>
+                        <div class="wrapper">
+                          <input type="checkbox" id="myCheckbox2" name="myCheckbox2" value="checked">
+                          <label for="myCheckbox2"></label>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <div class="food-container">
+              <div class="image-card">
+                <img src="/Circle Image/3.png" alt="">
+              </div>
+              <div class="food-content">
+                <div class="food-title">
+                  <h1>Goaty Tacos</h1>
+                </div>
+                <div class="price">
+                  <span>₱80.00 each</span>
+                  <div class="wrapper">
+                      <input type="checkbox" id="myCheckbox3" name="myCheckbox3" value="checked">
+                      <label for="myCheckbox3"></label>  
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="food-container">
+              <div class="image-card">
+                <img src="/Circle Image/4.png" alt="">
+              </div>
+              <div class="food-content">
+                <div class="food-title">
+                  <h1>Potato Tacos</h1>
+                </div>
+                <div class="price">
+                  <span>₱80.00 each</span>
+                  <div class="wrapper">
+                      <input type="checkbox" id="myCheckbox4" name="myCheckbox4" value="checked">
+                      <label for="myCheckbox4"></label>  
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="food-container">
+              <div class="image-card">
+                <img src="/Circle Image/5.png" alt="">
+              </div>
+              <div class="food-content">
+                <div class="food-title">
+                  <h1>Chicaron Tacos</h1>
+                </div>
+                <div class="price">
+                  <span>₱80.00 each</span>
+                  <div class="wrapper">
+                      <input type="checkbox" id="myCheckbox5" name="myCheckbox5" value="checked">
+                      <label for="myCheckbox5"></label>  
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="food-container">
+              <div class="image-card">
+                <img src="/Circle Image/6.png" alt="">
+              </div>
+              <div class="food-content">
+                <div class="food-title">
+                  <h1>Abby's Spcial Tacos</h1>
+                </div>
+                <div class="price">
+                  <span>₱80.00 each</span>
+                  <div class="wrapper">
+                      <input type="checkbox" id="myCheckbox6" name="myCheckbox6" value="checked">
+                      <label for="myCheckbox6"></label>  
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="food-container">
+              <div class="image-card">
+                <img src="/Circle Image/7.png" alt="">
+              </div>
+              <div class="food-content">
+                <div class="food-title">
+                  <h1>Breakfast Tacos</h1>
+                </div>
+                <div class="price">
+                  <span>₱80.00 each</span>
+                  <div class="wrapper">
+                      <input type="checkbox" id="myCheckbox7" name="myCheckbox7" value="checked">
+                      <label for="myCheckbox7"></label>  
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="food-container">
+              <div class="image-card">
+                <img src="/Circle Image/8.png" alt="">
+              </div>
+              <div class="food-content">
+                <div class="food-title">
+                  <h1>Barbacoa Tacos</h1>
+                </div>
+                <div class="price">
+                  <span>₱80.00 each</span>
+                  <div class="wrapper">
+                      <input type="checkbox" id="myCheckbox8" name="myCheckbox9" value="checked">
+                      <label for="myCheckbox8"></label>  
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="food-container">
+              <div class="image-card">
+                <img src="/Circle Image/9.png" alt="">
+              </div>
+              <div class="food-content">
+                <div class="food-title">
+                  <h1>Vegatable Tacos</h1>
+                </div>
+                <div class="price">
+                  <span>₱80.00 each</span>
+                  <div class="wrapper">
+                      <input type="checkbox" id="myCheckbox9" name="myCheckbox9" value="checked">
+                      <label for="myCheckbox9"></label>  
+                  </div>
+              </div>
+              </div>
+            </div>
+            <form>
+              <div class="form-container">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="name" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="abby@yahoo.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="age">Age</label>
+                  <input type="age" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                  <label for="payment">Mode of Payment</label>
+                  <select id="payment-option" name="payment-option" required>
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="gcash">GCash</option>
+                    <option value="paymaya">Paymaya</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="dine-option">Order Type</label>
+                  <select id="dine-option" name="dine-option" required>
+                    <option value="dine-in">Dine-in</option>
+                    <option value="take-out">Take-out</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="comments">Comments/Instruction</label>
+                  <textarea id="comments" name="comments"></textarea>
+                </div>
+                <div class="button-container">
+                  <button type="submit">Order Placed</button>
+                  <button type="button">Cancel</button>
+                </div>
+              </div>
+            </form>
+    <p><a href="../index.html"></a></p>
+</body>
+</html>
